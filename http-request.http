@@ -1,0 +1,39 @@
+### Get all books
+GET http://localhost:8000/api/books
+Accept: application/json
+
+### Get a book
+GET http://localhost:8000/api/books/2
+Accept: application/json
+
+### Create a book
+POST http://localhost:8000/api/books
+Accept: application/json
+
+{
+  "title": "Salesforce",
+  "isbn":"7890",
+  "author": {
+    "firstname":"Jason",
+    "lastname":"Smith"
+  }
+}
+
+### Delete a book
+DELETE http://localhost:8000/api/books/1
+Accept: application/json
+
+### Update a book
+PUT http://localhost:8000/api/books/2
+Accept: application/json
+
+{
+  "title": "Salesforce Updated Title",
+  "isbn":"7890123",
+  "author": {
+    "firstname":"Ian",
+    "lastname":"Lee"
+  }
+}
+
+###
